@@ -15,3 +15,11 @@
   -  Evite os obstáculos e tente sobreviver o máximo de tempo possível!
 
   -  O jogo termina quando o personagem colide com um obstáculo.
+  
+**🚀 Como Executar**
+
+  - Faça o download do projeto (.zip)
+
+  -  Extraia os arquivos
+
+  -  Abra o arquivo telainicial.html em qualquer navegador moderno

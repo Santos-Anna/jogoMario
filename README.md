@@ -10,11 +10,19 @@
 
   -  Escolha seu personagem (ex: Tanjiro ou Nezuko).
 
-  -  Use as setas do teclado para se mover e pular.
+  -  Use a tecla espaço do teclado para pular.
 
   -  Evite os obstáculos e tente sobreviver o máximo de tempo possível!
 
   -  O jogo termina quando o personagem colide com um obstáculo.
+
+**💻 Tecnologias Utilizadas**
+
+  -  HTML5 — estrutura das telas e elementos visuais
+
+  -  CSS3 — design, layout e animações
+
+   -  JavaScript (puro) — lógica do jogo e controle dos personagens
   
 **🚀 Como Executar**
 

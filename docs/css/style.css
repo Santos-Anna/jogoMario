@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    height: 100vh; /* garante 100% da altura da tela */
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;     /* centraliza na vertical */
+    background-image: url(/images/fundo.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.game-borad{
+    width: 70%;
+    height: 600px;
+    margin: 0 auto ;
+    position: relative;
+    overflow: hidden;
+   
+}
+.obstaculo{
+    position: absolute;
+    bottom: 0;
+    width: 180px;
+    animation: pipe-animation 2s infinite linear;
+    z-index: 100;
+}
+.obstaculo_tanjiro{
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    animation: pipe-animation 2s infinite linear;
+    z-index: 100;
+}
+.personagem{
+    position: absolute;
+    width: 200px;
+    bottom: 0;
+    transform: scaleX(-1);
+    z-index: 1;
+}
+.jump{
+    animation: jump 500ms infinite ease-out;
+}
+.clouds{
+    position: absolute;
+    width: 400px;
+    animation: clouds-animation 7s infinite linear;
+    z-index: 0;
+}
+.abelhas{
+    position: absolute;
+    width: 250px;
+    animation: clouds-animation 15s infinite linear;
+    z-index: 1;
+}
+.imagem_logo{
+    width: 200px;
+}
+
+.elementos {
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;    
+    gap: 15px;              
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_link{
+    display: inline-block;
+    width: 180px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #7C4DFF, #FF80AB);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center; /* Centraliza o texto */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte correta */
+}
+.button {
+    width: 180px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #7C4DFF, #FF80AB);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    text-decoration:  none;
+}
+
+
+.button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #FF80AB,  #7C4DFF);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background:linear-gradient(#4FC3F7,#3C6E47);
+    border-radius: 15%;
+}
+.container_tangiro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background:linear-gradient(#4FC3F7,#3C6E47);
+    border-radius: 15%;
+}
+.container_tangiro img{
+    right: 100px;
+}
+.obstaculo,
+.clouds,
+.abelhas {
+  animation-play-state: paused; /* ficam parados até iniciar */
+}
+.brilho{
+    width: 50px;
+    margin-left: 10px;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+.fechar{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 250px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes pipe-animation{
+   from{
+    right:-80px; 
+   } 
+
+   to{
+    right: 100%;
+   }
+}
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+@keyframes clouds-animation{
+    from{
+        right: 0;
+    }
+    to{
+        right: 100%;
+    }
+}

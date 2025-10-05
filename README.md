@@ -1,10 +1,10 @@
 # Jogo mario
 
-🎮 Jump Aventura
+**🎮 Jump Aventura**
 
   Um jogo 2D feito em HTML, CSS e JavaScript, inspirado em animações japonesas como Demon Slayer. O jogador deve desviar de obstáculos e sobreviver o máximo possível enquanto aproveita um visual fofo e dinâmico.
 
-🕹️ Como Jogar
+**🕹️ Como Jogar**
 
   -  Abra o arquivo telainicial.html para iniciar o jogo.
 
